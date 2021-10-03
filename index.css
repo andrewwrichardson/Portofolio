@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 40pt;
+  text-align: left;
+  grid-area: title;
+  color: grey;
+}
+
+.main_body_text {
+  background: #eee;
+  padding: 10px;
+  grid-area: center;
+}
+
+.projectsnippet {
+}
+
+.projecttitle {
+}
+
+.cssgrid {
+  display: grid;
+  grid-template-areas:
+    "title  title title "
+    "picture center sidebar"
+    "facts center sidebar"
+    "facts center sidebar";
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+nav {
+  grid-area: sidebar;
+  font-size: 20px;
+  line-height: 2.5pc;
+  padding: 2pc;
+}
+
+.photo {
+  grid-area: picture;
+}
+a {
+  text-decoration: none;
+  font-size: 25 px;
+  color: rgb(174, 198, 207);
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+form {
+  padding: 10 px;
+}
+label {
+  line-height: 30px;
+}
